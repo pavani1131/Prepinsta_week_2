@@ -1,0 +1,23 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+  background-color: #3498db; 
+  margin: 0 5px;
+  animation: square-animation 1.5s infinite ease-in-out;
+}
+
+@keyframes square-animation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
